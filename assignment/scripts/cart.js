@@ -43,18 +43,19 @@ console.log(basket);
  // 2. Create a function called isFull(). It should:
    // - return `false` if the basket contains *less* than max number of items
    // - return `true` otherwise (equal or more than maxItems)
-
    
-  
-  
+   function isFull() {
+    if (basket.length < maxItems) {
+      return false;
+    } else {
+      return true;
+    }
+  }
   
   //3. Update the required `addItem` function to:
    // - Use the `isFull` function to prevent more than `maxItems` from being added to the basket. 
    // - If an item was added to the array, return `true`
     //- If there was no room and the item could not be added return `false`
-
-    
-
 
 
 
